@@ -1,0 +1,7 @@
+/* variables.css import */
+@import './variables.css'; /* variables.css 파일을 불러와 CSS 변수 사용 */
+
+.info-section {
+    padding: 2% 5% 4% 7%; /* 내부 여백 (위아래 1.5rem, 좌우 7%) */
+    font-size: 1.4rem; /* 버튼 글씨 크기를 설정 */
+}

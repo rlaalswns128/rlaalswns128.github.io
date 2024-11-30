@@ -1,0 +1,135 @@
+@import './variables.css'; /* variables.css 파일을 불러와 CSS 변수 사용 */
+
+.projects-section {
+  display: flex;
+  min-height: 100vh;
+  color: #000000;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.project-list {
+  flex: 2.5;
+  padding: 5% 3rem 10% 3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.project-list h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.project-button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 1rem 0;
+  margin: 0.3rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 400;
+}
+
+.project-button:hover {
+  transform: translateX(10px);
+  color: #007bff;
+}
+
+.project-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.project-button:hover::after {
+  width: 100%;
+}
+
+.project-content {
+  flex: 7.5;
+  padding: 4% 3rem 10% 3rem;
+}
+
+.project-content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+
+.project-description {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.project-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.project-link:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-link::after {
+  content: '→';
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover::after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    flex-direction: column;
+  }
+  
+  .project-list, .project-content {
+    padding: 2rem;
+  }
+  
+  .project-list {
+    border-right: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-list h2, .project-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-description {
+    padding: 1.5rem;
+  }
+}

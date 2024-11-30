@@ -1,0 +1,41 @@
+
+@import './variables.css'; /* variables.css 파일을 불러와 CSS 변수 사용 */
+/* 네비게이션 바 스타일 */
+nav {
+    position: fixed; /* 화면 상단에 고정 */
+    top: 0; /* 화면의 위쪽에 배치 */
+    left: 0; /* 화면의 왼쪽에 배치 */
+    width: 100%; /* 화면 전체 너비를 차지 */
+    max-width: 4000px; /* 최대 너비 제한 */
+    margin: 0 auto; /* 중앙 정렬 */
+    padding: 1.5rem 7%; /* 내부 여백 (위아래 1.5rem, 좌우 7%) */
+    display: flex; /* flexbox를 사용해 요소를 정렬 */
+    justify-content: space-between; /* 요소를 양 끝에 정렬 */
+    align-items: center; /* 요소를 수직 중앙 정렬 */
+    font-weight: bold; /* 폰트를 굵게 설정 */
+    background-color: var(--color-background); /* 네비게이션 배경색 적용 */
+    color: #000000; /* 텍스트 색상 설정 */
+    z-index: 10; /* 네비게이션의 z-index를 높여 다른 요소보다 위에 표시 */
+    border-bottom: 1px solid #333; /* 하단에 테두리 추가 */
+    box-sizing: border-box; /* 테두리와 패딩을 전체 크기에 포함 */
+    cursor: pointer; /* 커서를 포인터로 변경 */
+  }
+  
+  nav .logo {
+    /* 네비게이션 로고 스타일 */
+    font-size: 1.5rem; /* 폰트 크기를 설정 */
+  }
+  
+  nav a {
+    /* 네비게이션 링크 스타일 */
+    color: #252525; /* 링크 텍스트 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 1.3rem; /* 폰트 크기 */
+    font-weight: 500; /* 폰트 굵기 */
+    margin-left: 2rem; /* 왼쪽에 여백 추가 */
+  }
+  
+  nav a:hover {
+    /* 네비게이션 링크의 호버 효과 */
+    color: #555; /* 호버 시 텍스트 색상을 더 밝게 변경 */
+  }

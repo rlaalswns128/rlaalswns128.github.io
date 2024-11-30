@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+    --font-primary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    --font-secondary: 'Pretendard', sans-serif;
+    --color-background: #50B4F5;
+    --color-text: #333;
+    --color-accent: #007bff;
+}
+
+body {
+    /* 웹페이지의 기본 스타일 설정 */
+    font-family: var(--font-primary); /* CSS 변수로 설정된 폰트를 사용 */
+    background-color: var(--color-background); /* 배경색 적용 */
+    color: var(--color-text); /* 텍스트 색상 적용 */
+    margin: 0; /* 기본 여백 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+    overflow-x: hidden; /* 가로 스크롤을 숨김 */
+}
