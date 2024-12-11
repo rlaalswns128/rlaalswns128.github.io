@@ -33,7 +33,8 @@ const Skills = () => {
       </div>
       <div className="header-wrapper">
         <div className="skills-intro">
-          학부 과정에서 자바, 파이썬, MySQL, MongoDB, 톰캣, 스프링, 스프링부트, 플라스크 등을 활용한 프로젝트를 통해 실무 기술 역량을 쌓았습니다.
+          학부 과정에서 자바, 파이썬, MySQL, MongoDB, 톰캣, 스프링, 
+          스프링부트, 플라스크 등을 활용한 프로젝트를 통해 실무 기술 역량을 쌓았습니다.
         </div>
         <div className="content-toggle" onClick={toggleContent}>
           <span>상세 내용 {isExpanded ? '접기' : '펼치기'}</span>
