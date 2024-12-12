@@ -9,16 +9,17 @@
   height: 100vh; /* 섹션 높이를 화면(viewport) 높이의 100%로 설정 */
   background-color: var(--color-background); /* CSS 변수로 배경색 설정 */
   text-align: center; /* 섹션 내 텍스트를 중앙 정렬 */
-  font: bold 6rem /2 "SBAggroB"; /* 텍스트 스타일 설정:
+  font: bold clamp(1rem, 10vw, 5rem) /2 "SBAggroB"; /* 텍스트 스타일 설정:
                                     - 굵은 글꼴 (bold)
                                     - 글꼴 크기: 6rem
                                     - 행간: 2
                                     - 폰트 이름: "SBAggroB" */
   
   /* 모바일 대응을 위한 추가 스타일 */
-  padding: 20px;
+  padding: 50px;
   word-break: keep-all;
   word-wrap: break-word;
+  gap: 5%;
 }
 
 /* 모바일 화면을 위한 미디어 쿼리 */
@@ -38,9 +39,9 @@
   }
 }
 
-.center-image {
+.main-character {
   /* 이미지 중앙 정렬 및 크기 조정 */
   width: auto; /* 이미지의 너비를 자동으로 설정 (원본 비율 유지) */
-  height: 100%; /* 이미지 높이를 부모 요소의 100%로 설정 */
-  max-width: 80%; /* 이미지의 최대 너비를 80%로 제한 (부모 요소 기준) */
+  height: auto; /* 이미지 높이를 부모 요소의 100%로 설정 */
+  max-width: 40%; /* 이미지의 너비를 자동으로 설정 (원본 비율 유지) */
 }

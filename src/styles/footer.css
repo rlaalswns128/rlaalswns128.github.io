@@ -1,0 +1,7 @@
+.footer {
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 2rem 0rem 5rem 0rem; /* 푸터와 위 요소 간의 여백 */
+    text-align: center; /* 중앙 정렬 */
+    font-size: 1.1rem; /* 글씨 크기 */
+    color: #000; /* 글씨 색상 */
+}

@@ -5,6 +5,7 @@ import Skills from './components/skills';
 import Projects from './components/projects';
 import Info from './components/info';
 import Profile from './components/profile';
+import Footer from './components/footer';
 import './styles/variables.css';
 
 const App = () => (
@@ -25,6 +26,7 @@ const App = () => (
     <div id="info">
       <Info />
     </div>
+    <Footer />
   </>
 );
 

@@ -6,7 +6,9 @@ const Cover = () => (
     <meta charSet="utf-8" />
     안녕하세요<br/>
     김민준입니다
+    <img src="/images/main_character.png" className="main-character" alt="main-character" />
   </div>
+  
 );
 
 export default Cover;
